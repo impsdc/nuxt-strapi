@@ -3,7 +3,9 @@
     <div class="fixed top-0">
       <heeader />
     </div>
-    <nuxt />
+    <div class="pt-5">
+      <nuxt />
+    </div>
   </div>
 </template>
 
