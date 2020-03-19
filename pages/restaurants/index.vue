@@ -9,12 +9,12 @@
 
        <!-- Restaurant cards -->
       <div class="max-w-sm rounded overflow-hidden shadow-lg" v-for="restaurant in filteredList" v-bind:key="restaurant">     
-              <img :src="'http://localhost:1337/' + restaurant.image.url" alt="" class="w-full">    
+              <img :src="'http://localhost:1337/' + restaurant.Images.url" alt="" class="w-full">    
           <div class="px-6 py-4">
-                  <h3 class="font-bold text-xl mb-2">{{ restaurant.name }}</h3>
-                  <p class="text-gray-700 text-base">{{ restaurant.description }}</p>
+                  <h3 class="font-bold text-xl mb-2">{{ restaurant.Name }}</h3>
+                  <p class="text-gray-700 text-base">{{ restaurant.Description }}</p>
                   <!-- // Link to the restaurant using router-link -->
-                  <router-link :to="{ name: 'restaurants-id', params: { id: restaurant.id }}" tag="a" class="uk-button uk-button-primary">See dishes
+                  <router-link :to="{ Name: 'restaurants-id', params: { id: restaurant.id }}" tag="a" class="uk-button uk-button-primary">See dishes
                   </router-link>
           </div>
       </div>
@@ -51,7 +51,7 @@ export default {
     // Search system
     filteredList() {
       return this.restaurants.filter(restaurant => {
-        return restaurant.name.toLowerCase().includes(this.query.toLowerCase())
+        return restaurant.Name.toLowerCase().includes(this.query.toLowerCase())
       })
     },
   }

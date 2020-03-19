@@ -1,9 +1,9 @@
 query Restaurants {  
   restaurants {
     id
-    name
-    description
-    image {
+    Name
+    Description
+    Images {
       url
     }
   }
