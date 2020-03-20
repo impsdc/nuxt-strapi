@@ -3,7 +3,7 @@
     <div class="fixed top-0">
       <heeader />
     </div>
-    <div class="pt-5">
+    <div class="pad">
       <nuxt />
     </div>
   </div>
@@ -17,3 +17,8 @@ export default {
   }
 }
 </script>
+<style>
+.pad{
+  padding-top: 50px;
+}
+</style>

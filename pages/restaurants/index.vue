@@ -14,7 +14,7 @@
                   <h3 class="font-bold text-xl mb-2">{{ restaurant.Name }}</h3>
                   <p class="text-gray-700 text-base">{{ restaurant.Description }}</p>
                   <!-- // Link to the restaurant using router-link -->
-                  <router-link :to="{ Name: 'restaurant-id', params: { id: restaurant.id }}" tag="a" class="bg-teal-500 hover:bg-teal-600 focus:outline-none focus:shadow-outline">See dishes
+                  <router-link :to="{ Name: 'restaurants-id', params: { id: restaurant.id }}" tag="a" class="bg-teal-500 hover:bg-teal-600 focus:outline-none focus:shadow-outline">See dishes
                   </router-link>
           </div>
       </div>
