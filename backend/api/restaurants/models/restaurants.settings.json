@@ -3,7 +3,7 @@
   "connection": "default",
   "collectionName": "restaurants",
   "info": {
-    "name": "Restaurant"
+    "name": "restaurants"
   },
   "options": {
     "increments": true,
@@ -21,6 +21,10 @@
       "via": "related",
       "plugin": "upload",
       "required": false
+    },
+    "dishes": {
+      "via": "restaurant",
+      "collection": "dish"
     }
   }
 }

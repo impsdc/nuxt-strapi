@@ -5,7 +5,7 @@
               <nuxt-link to="/test">BlaBkla</nuxt-link>
           </li>
           <li class="mr-6">
-               <nuxt-link to="/resto">Restaurant</nuxt-link>
+               <nuxt-link to="/restaurants">Restaurant</nuxt-link>
           </li>
         </ul>
       </nav>

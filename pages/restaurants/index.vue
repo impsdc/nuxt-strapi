@@ -8,13 +8,13 @@
       </form>
 
        <!-- Restaurant cards -->
-      <div class="max-w-sm rounded overflow-hidden shadow-lg" v-for="restaurant in filteredList" v-bind:key="restaurant">     
+      <div class="max-w-sm rounded overflow-hidden shadow-lg" v-for="(restaurant, index) in filteredList" v-bind:key="index">     
               <img :src="'http://localhost:1337/' + restaurant.Images.url" alt="" class="w-full">    
           <div class="px-6 py-4">
                   <h3 class="font-bold text-xl mb-2">{{ restaurant.Name }}</h3>
                   <p class="text-gray-700 text-base">{{ restaurant.Description }}</p>
                   <!-- // Link to the restaurant using router-link -->
-                  <router-link :to="{ Name: 'restaurants-id', params: { id: restaurant.id }}" tag="a" class="uk-button uk-button-primary">See dishes
+                  <router-link :to="{ Name: 'restaurant-id', params: { id: restaurant.id }}" tag="a" class="bg-teal-500 hover:bg-teal-600 focus:outline-none focus:shadow-outline">See dishes
                   </router-link>
           </div>
       </div>
