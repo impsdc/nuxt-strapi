@@ -15,7 +15,7 @@
                     <img :src="'http://localhost:1337/' + dish.Images.url" alt="" />
                 </div>
                 <div class="uk-card-body">
-                    <h3 class="uk-card-title">{{ dish.Name }} <span class="uk-badge">{{ dish.Prix }}€</span></h3>
+                    <h3 class="uk-card-title">{{ dish.Name }} <span class="uk-badge">{{ dish.prix }}€</span></h3>
                     <p>{{ dish.Description }}</p>
                 </div>
                 <div class="uk-card-footer">

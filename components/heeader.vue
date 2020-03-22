@@ -11,9 +11,13 @@
          <div class="flex">
 
           <!-- // If you are logged in -->
-          <ul class="" v-if="username">
-              <li class="p-5"><a href="#" class="uk-link-reset"><img src="https://png2.cleanpng.com/sh/a7adacc7226d2dc438dafb37913a8ab8/L0KzQYm3V8E2N5tqipH0aYP2gLBuTfVudZZ5ReZxZT3vdbj2Tf1wfppqRehyZHXyd7L0hb1xeppze9d8cz34frryigR1gV58Rdd2bXX3Pb3shB8udZD7gdc2NXK3coG9UMRibGJrfqI3Mkm0RoS7VMYyPWQ2TqY8M0m5R4GCUb5xdpg=/kisspng-emmet-the-lego-movie-videogame-princess-unikitty-w-emmet-lego-movie-5b4b0604ad1ff0.2916344615316433967091.png" class="uk-border-circle" height="40" width="40" alt="">{{ username }}</a></li>
-              <li><a href="#" @click="logout">Logout</a></li>
+          <ul class="flex align-center" v-if="username">
+              <li class="p-5">
+                <a href="#" class="uk-link-reset">{{ username }}</a>
+                </li>
+              <li class="p-5">
+                <a href="#" @click="logout">Logout</a>
+              </li>
           </ul>
 
           <!-- // If you are not logged in -->

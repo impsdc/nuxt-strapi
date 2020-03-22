@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="fixed top-0">
+    <div class="fixed top-0 left-0 right-0">
       <heeader />
     </div>
     <div class="pad">
@@ -19,6 +19,6 @@ export default {
 </script>
 <style>
 .pad{
-  padding-top: 50px;
+  padding-top: 100px;
 }
 </style>
